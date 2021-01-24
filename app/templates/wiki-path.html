@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1 style="text-align: center;">Welcome to Wiki-Path!</h1>
+    <p style="text-align: center;">Enter a starting page and target page, then see a path between the two.</p>
+    <div class="row">
+        {{ wtf.quick_form(form) }}
+    </div>
+{% endblock %}

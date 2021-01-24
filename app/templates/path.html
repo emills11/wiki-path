@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+    <h1>Path Results</h1>
+    <hr>
+    <ul>
+        {% for page in path %}
+        <li>{{ page }}</li>
+        {% endfor %}
+    </ul>
+    <div>
+        <a href="/">Return Home</a>
+    </div>
+{% endblock %}
